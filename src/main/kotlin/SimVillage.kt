@@ -1,6 +1,8 @@
 import java.util.StringJoiner
 
 fun main(args: Array<String>) {
+
+
     val greetingFunction: (String, Int) -> String = { playerName, numBuildings ->
         val currentYear = 2018
         println("Adding $numBuildings houses!")
@@ -67,4 +69,9 @@ fun configureGreetingFunction(): (String) -> String {
         println("Adding $numBuildings $structureType")
         "Welcome to SimVillage, $playerName! (copyright $currentYear)"
     }
+}
+
+fun sum(a:Int, b: Int){
+    val sum = a+b
+    println(sum)
 }
